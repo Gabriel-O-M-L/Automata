@@ -1,0 +1,90 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.navbar_main{
+    display: flex;
+    height: 60px;
+    background-color: #9388A2;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nabar_centering{
+    background-color: red;
+    width: 80%;
+    height: 100%;
+}
+.navbar_logo{
+    height: 100%;
+    width: 10%;
+    margin-left: 10px
+}
+.navbar_logo:hover{
+    cursor: pointer;
+}
+
+.navbar_logo img{
+    height: 100%;
+
+}
+.navbar_search_box{
+    height: 45px;
+    width: 75%;
+    padding: 5px;
+    background-color: #170B3B;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.navbar_type_selector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    height: 100%;
+    background-color: #170B3B;
+    color: #9388A2;
+}
+.navbar_search_inputs{
+    display: flex;
+    height: 80%;
+    background-color: #9388A2;
+    border-radius: 10px;
+}
+.navbar_search_text_input{
+    align-items: center;
+    height: 100%;
+    background-color: #9388A2;
+    width: 80%;
+    margin-right: 5px;
+    color: #170B3B;
+}
+
+.navbar_search_button{
+    border-radius: 10px;
+    height: 100%;
+    left: 2%;
+    background-color: #0E050F;
+}
+.navbar_search_button img{
+    height: 100%;
+}
+.navbar_sandwitch_main{
+
+    height: 100%;
+}
+
+.navbar_sandwitch_main img{
+    height: 100%;
+    margin-right: 10px;
+}
+.navbar_sandwitch_main:hover{
+    cursor: pointer;
+}
