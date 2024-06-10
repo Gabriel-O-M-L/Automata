@@ -1,9 +1,18 @@
 "use client"
+import React, {useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Sidebar from '@/_components/Navigation/Sidebar'
 import '@/_styles/Navbar/navbar.css'
 
+
 export default function Navbar() {
+    const [showSidebar, setShowSidebar] = useState(false);
+
+    const showSidebarHandler = () => {
+        setShowSidebar(!showSidebar)
+    }
+
     return (
         <div className="navbar_main">
 
@@ -32,15 +41,13 @@ export default function Navbar() {
 
             <label className="navbar_sandwitch_main">
                 <Image className="navbar_sandwitch_image" src={"/Components/Navbar/Sandwich.svg"} width={30}
-                       height={100} alt={"Sandwitch"} onClick={click}/>
+                       height={100} alt={"Sandwitch"} onClick={showSidebarHandler}/>
             </label>
+
 
 
         </div>
 
-
     );
 }
-function click() {
-    alert("teste")
-}
+
