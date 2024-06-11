@@ -1,15 +1,15 @@
+
 import Image from "next/image";
 import Navbar from "@/_components/Navigation/Navbar";
-import Sidebar from "@/_components/Navigation/Sidebar";
-import React from "react";
+import Body from "@/_components/Body";
+import Scroller from "@/_components/Navigation/Scroller";
 
 export default function Home() {
-    const [showSidebar, setShowSidebar] = React.useState(false);
-  return (
-    <main>
-      <Navbar />
-
-      <Sidebar/>
-    </main>
-  );
+     return (
+        <main>
+          <Navbar/>
+          <Scroller/>
+          <Body/>
+        </main>
+    );
 }

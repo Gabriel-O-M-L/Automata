@@ -23,10 +23,14 @@ export default function Navbar() {
             <div className="navbar_centering">
                 <div className="navbar_search_box">
                     <select className="navbar_type_selector" aria-placeholder={"Type"}>
-                        <option value="Type">Release</option>
+                        <option value="Type">Release date</option>
                         <option value="Type">Writer</option>
                         <option value="Type">Penciller</option>
                         <option value="Type">Letterer</option>
+                        <option value="Type">Inker</option>
+                        <option value="Type">Colorist</option>
+                        <option value="Type">Editor</option>
+                        <option value="Type">Publisher</option>
                         <option value="Type">Translator</option>
                     </select>
                     <div className="navbar_search_inputs">
@@ -44,8 +48,7 @@ export default function Navbar() {
                        height={100} alt={"Sandwitch"} onClick={showSidebarHandler}/>
             </label>
 
-
-
+            {showSidebar && <Sidebar/>}
         </div>
 
     );

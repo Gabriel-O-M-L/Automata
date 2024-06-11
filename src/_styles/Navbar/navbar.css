@@ -6,6 +6,10 @@
     padding: 0;
     margin: 0;
 }
+input:focus, select:focus {
+    outline: none;
+    border: none;
+}
 .navbar_main{
     display: flex;
     height: 60px;

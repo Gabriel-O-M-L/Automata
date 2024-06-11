@@ -1,14 +1,15 @@
 
 
 .sidebar_main{
-    position: fixed;
+    position: absolute;
     z-index: 1;
     left: calc(100vw - 400px);
+    bottom: 0vh;
     height: 100vh;
     width: 400px;
     background-color: #170B3B;
     color: #9388A2;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .sidebar_closing{
