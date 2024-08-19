@@ -19,11 +19,13 @@ export default function Sidebar() {
             <div className="sidebar_user_sign">
                 <Image src={"Components/Sidebar/User_placeholder_image.svg"} height={10} width={100} alt={"User photo"}/>
                 <a>
-                    Login
+                    <Link href={"/Login"}>
+                        Login
+                    </Link>
                 </a>
-                <a>
-                    Sign-in
-                </a>
+                <Link href={"/Login "}>
+                    Sing up
+                </Link>
             </div>
             <div className="sidebar_navigation">
                 <Link href={""} style={{padding:"10px"}}>

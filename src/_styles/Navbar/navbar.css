@@ -61,13 +61,13 @@ input:focus, select:focus {
     height: 80%;
     background-color: #9388A2;
     border-radius: 10px;
+
 }
 .navbar_search_text_input{
-    align-items: center;
     height: 100%;
     background-color: #9388A2;
     width: 80%;
-    margin-right: 5px;
+    margin-right: 10px;
     color: #170B3B;
 }
 
